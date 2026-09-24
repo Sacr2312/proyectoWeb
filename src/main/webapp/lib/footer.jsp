@@ -1,5 +1,6 @@
-<footer    
-    <p> Todos los derechos reservados Ruben Ruben </p> 
-<footer
+<footer>
+        <p> Todos los derechos reservados @APO3 2026 </p> 
+</footer> 
+
     </body>
 </html>

@@ -1,9 +1,20 @@
 <%@include file="lib/header.jsp"%>
 
-        <h1>BIENVENIDOS CHICOS</h1>
-        <br>Mi nombre es ruben
+<div>
+    <<img src="./images/channels4_banner.jpg" alt="Banner del proyeto"/>
+</div>
+    
+
+        <h1>PRIMER PROGRAMA WEB EN JSP</h1>
+        <br>
         <h3>Cuerpo de pagina index</h3>
         <%
             int edad= 15;
-            %>
-            <%@include file = "lib/footer.jsp"%>
+            System.out.print(edad);
+        %>
+        <div class="container"> 
+            <form action= "registro.jsp" method="GET">
+                <button type="submit" class="btn btn-primary"> Registrar Usuario</Button>
+                
+            </form>
+<%@include file = "lib/footer.jsp"%>
