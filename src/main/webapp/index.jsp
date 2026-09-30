@@ -15,6 +15,8 @@
         <div class="container"> 
             <form action= "registro.jsp" method="GET">
                 <button type="submit" class="btn btn-primary"> Registrar Usuario</Button>
-                
-            </form>
+                </form>
+        </div>    
+            
 <%@include file = "lib/footer.jsp"%>
+
