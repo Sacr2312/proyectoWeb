@@ -1,6 +1,10 @@
-<footer>
-        <p> Todos los derechos reservados @APO3 2026 </p> 
-</footer> 
+<footer class="bg-dark text-white text-center py-3 mt-auto">
+        <div class="container">
+            <p class="mb-0 small">Todos los derechos reservados @APO3 2026</p>
+        </div>
+    </footer>
 
-    </body>
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

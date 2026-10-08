@@ -1,2 +1,6 @@
 com\mycompany\webfas\JakartaRestConfiguration.class
+Modelo\Servicio.class
+controlador\fuenteServlet.class
+Servlets\Servlet.class
 com\mycompany\webfas\resources\JakartaEE10Resource.class
+Modelo\FuenteHidrica.class

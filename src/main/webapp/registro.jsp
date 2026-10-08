@@ -1,23 +1,32 @@
-<%@include file="lib/header.jsp"%>
-<div class="container mt-5">
-    <form>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
-  </div>
-  <div class="mb-3 form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
-    
-    
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<jsp:include page="lib/header.jsp"/>
+
+<div class="container my-5" style="max-width: 500px;">
+    <div class="card shadow-sm border-0 p-4">
+        <h3 class="text-center fw-bold text-primary mb-4">Registro de Usuario</h3>
+        
+        <form action="registro" method="POST">
+            <div class="mb-3">
+                <label class="form-label fw-bold">Nombre Completo</label>
+                <input type="text" name="nombre" class="form-control" placeholder="Ingresa tu nombre" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">Correo Electrónico</label>
+                <input type="email" name="email" class="form-control" placeholder="correo@ejemplo.com" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">Contraseña</label>
+                <input type="password" name="password" class="form-control" placeholder="********" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100 py-2 fw-bold mt-3">Crear Cuenta</button>
+            <div class="text-center mt-3">
+                <a href="login.jsp" class="small text-decoration-none">¿Ya tienes cuenta? Inicia sesión</a>
+            </div>
+        </form>
+    </div>
 </div>
 
-<%@include file = "lib/footer.jsp"%>
+<jsp:include page="lib/footer.jsp"/>
