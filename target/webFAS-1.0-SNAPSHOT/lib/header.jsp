@@ -1,4 +1,9 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="Modelo.Usuario"%>
+<%
+    // Usuario con sesion iniciada (null si es visitante). No crea sesion para visitantes.
+    Usuario usuarioNav = controlador.Auth.actual(request);
+%>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -21,11 +26,24 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link text-white" href="index.jsp">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="registrarFuentes.jsp">Fuentes Hídricas</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="registro.jsp">Registrar Usuario</a></li>
+                    <% if (usuarioNav != null) { %>
+                    <li class="nav-item"><a class="nav-link text-white" href="fuenteServlet">Fuentes Hídricas</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="usuarioServlet">Usuarios</a></li>
+                    <% } %>
                 </ul>
-                <div class="d-flex">
-                    <a href="login.jsp" class="btn btn-outline-light btn-sm px-3">Iniciar Sesión</a>
+                <div class="d-flex align-items-center gap-2">
+                    <% if (usuarioNav != null) { %>
+                        <span class="text-white small me-2">
+                            <%= logica.Util.esc(usuarioNav.getNombre()) %>
+                            <span class="badge bg-light text-primary ms-1"><%= logica.Util.esc(usuarioNav.getRol()) %></span>
+                        </span>
+                        <form action="logout" method="POST" class="m-0">
+                            <button type="submit" class="btn btn-outline-light btn-sm px-3">Cerrar Sesión</button>
+                        </form>
+                    <% } else { %>
+                        <a href="registro.jsp" class="btn btn-light btn-sm px-3">Registrarse</a>
+                        <a href="login.jsp" class="btn btn-outline-light btn-sm px-3">Iniciar Sesión</a>
+                    <% } %>
                 </div>
             </div>
         </div>

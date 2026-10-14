@@ -1,6 +1,16 @@
 com\mycompany\webfas\JakartaRestConfiguration.class
 Modelo\Servicio.class
-controlador\fuenteServlet.class
+controlador\RegistroServlet.class
+logica\FuenteDAO.class
+Modelo\Usuario.class
 Servlets\Servlet.class
+controlador\LogoutServlet.class
+controlador\UsuarioServlet.class
 com\mycompany\webfas\resources\JakartaEE10Resource.class
 Modelo\FuenteHidrica.class
+controlador\fuenteServlet.class
+controlador\Auth.class
+controlador\AuthFilter.class
+logica\Util.class
+controlador\LoginServlet.class
+logica\UsuarioDAO.class
