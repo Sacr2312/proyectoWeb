@@ -1,4 +1,4 @@
-package controlador;
+package Servlets;
 
 import Modelo.FuenteHidrica;
 import java.io.IOException;

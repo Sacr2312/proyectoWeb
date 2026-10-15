@@ -2,7 +2,7 @@
 <%@page import="Modelo.Usuario"%>
 <%
     // Usuario con sesion iniciada (null si es visitante). No crea sesion para visitantes.
-    Usuario usuarioNav = controlador.Auth.actual(request);
+    Usuario usuarioNav = Servlets.Auth.actual(request);
 %>
 <!DOCTYPE html>
 <html lang="es">

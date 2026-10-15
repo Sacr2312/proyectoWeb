@@ -17,8 +17,8 @@
     String error = (String) request.getAttribute("error");
     String q = (String) request.getAttribute("q");
     String rolSel = editando != null && editando.getRol() != null ? editando.getRol() : "";
-    boolean esAdmin = controlador.Auth.esAdmin(request);
-    Modelo.Usuario yo = controlador.Auth.actual(request);
+    boolean esAdmin = Servlets.Auth.esAdmin(request);
+    Modelo.Usuario yo = Servlets.Auth.actual(request);
 %>
 <jsp:include page="lib/header.jsp"/>
 

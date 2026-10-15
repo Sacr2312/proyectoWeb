@@ -4,7 +4,7 @@
     String e(Object o) { return logica.Util.esc(o); }
 %>
 <%
-    Usuario actual = controlador.Auth.actual(request);
+    Usuario actual = Servlets.Auth.actual(request);
 %>
 <jsp:include page="lib/header.jsp"/>
 

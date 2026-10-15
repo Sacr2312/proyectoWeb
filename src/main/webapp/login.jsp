@@ -3,7 +3,7 @@
     String e(Object o) { return logica.Util.esc(o); }
 %>
 <%
-    if (controlador.Auth.actual(request) != null) { // ya inicio sesion
+    if (Servlets.Auth.actual(request) != null) { // ya inicio sesion
         response.sendRedirect("index.jsp");
         return;
     }

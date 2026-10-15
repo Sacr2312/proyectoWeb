@@ -1,4 +1,4 @@
-package controlador;
+package Servlets;
 
 import Modelo.Usuario;
 import jakarta.servlet.http.HttpServletRequest;
