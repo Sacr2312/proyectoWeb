@@ -30,4 +30,10 @@ public final class Auth {
         Usuario u = actual(request);
         return u != null && UsuarioDAO.ADMIN.equals(u.getRol());
     }
+
+    // Pueden registrar mediciones el administrador y el operador
+    public static boolean puedeMedir(HttpServletRequest request) {
+        Usuario u = actual(request);
+        return u != null && (UsuarioDAO.ADMIN.equals(u.getRol()) || "Operador".equals(u.getRol()));
+    }
 }

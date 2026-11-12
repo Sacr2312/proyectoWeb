@@ -21,6 +21,20 @@ public class Util {
         return s == null || s.trim().isEmpty();
     }
 
+    // quita los saltos de linea y los espacios de los extremos
+    public static String limpiar(String s) {
+        if (s == null) return "";
+        return s.replace("\r", " ").replace("\n", " ").trim();
+    }
+
+    // true si algun texto trae punto y coma, que es lo que separa los datos en los txt
+    public static boolean tienePuntoYComa(String... textos) {
+        for (String t : textos) {
+            if (t != null && t.contains(";")) return true;
+        }
+        return false;
+    }
+
     /** Hash PBKDF2 con sal aleatoria. Formato: salt:hash (Base64). */
     public static String hash(String password) {
         byte[] salt = new byte[16];

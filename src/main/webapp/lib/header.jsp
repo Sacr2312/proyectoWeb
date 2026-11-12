@@ -29,6 +29,8 @@
                     <% if (usuarioNav != null) { %>
                     <li class="nav-item"><a class="nav-link text-white" href="fuenteServlet">Fuentes Hídricas</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="usuarioServlet">Usuarios</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="medicionServlet">Calidad del agua</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="reporteServlet">Reportes</a></li>
                     <% } %>
                 </ul>
                 <div class="d-flex align-items-center gap-2">

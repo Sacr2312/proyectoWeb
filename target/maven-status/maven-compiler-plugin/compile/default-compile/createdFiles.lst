@@ -2,10 +2,14 @@ com\mycompany\webfas\JakartaRestConfiguration.class
 Modelo\Servicio.class
 Servlets\RegistroServlet.class
 logica\FuenteDAO.class
+logica\MedicionDAO.class
+logica\Archivos.class
 Servlets\fuenteServlet.class
+Modelo\MedicionCalidad.class
 Modelo\Usuario.class
 Servlets\UsuarioServlet.class
 Servlets\AuthFilter.class
+Servlets\ReporteServlet.class
 com\mycompany\webfas\resources\JakartaEE10Resource.class
 Modelo\FuenteHidrica.class
 Servlets\LogoutServlet.class
@@ -13,3 +17,4 @@ Servlets\LoginServlet.class
 logica\Util.class
 Servlets\Auth.class
 logica\UsuarioDAO.class
+Servlets\MedicionServlet.class

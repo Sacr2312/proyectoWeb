@@ -11,7 +11,8 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 /** Solo deja pasar a los CRUD a quien tenga la sesion iniciada; al resto lo manda al login. */
-@WebFilter(urlPatterns = {"/usuarioServlet", "/fuenteServlet", "/usuarios.jsp", "/fuentes.jsp"})
+@WebFilter(urlPatterns = {"/usuarioServlet", "/fuenteServlet", "/medicionServlet", "/reporteServlet",
+    "/addUsers.jsp", "/listUsers.jsp", "/addItems.jsp", "/listItems.jsp", "/calidad.jsp", "/reportes.jsp"})
 public class AuthFilter implements Filter {
 
     @Override
